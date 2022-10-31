@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link To Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="dist/main.css">
+
+    <!-- Shortcut Icon Link -->
+    <link rel="shortcut icon" href="/svgs/favicon.svg" type="image/x-icon">
+
+    <!-- Project Title -->
+    <title>Crawl Motors</title>
+</head>
+<body>
+    <nav class="w-full fixed px-7 py-3 flex items-center justify-between bg-transparent z-50 lg:px-9 xl:px-20">
+        <h3 class="text-xl text-grey text-left font-bold">Crawl <span class="text-light">Motors</span></h3>
+        <button id="menu" class="w-7 bg-transparent lg:hidden">
+            <img src="/svgs/menu.svg" class="w-full menu_open">
+            <img src="/svgs/close.svg" class="hidden w-full menu_close">
+        </button>
+        <div id="nav_menu" class="w-fit hidden px-5 py-7 top-16 h-fit flex-col gap-1 absolute right-5 bg-grey rounded-lg lg:flex lg:flex-row lg:top-0 lg:p-0 lg:relative lg:bg-transparent lg:gap-3">
+            <a href="#" class="text-dark text-base text-center font-medium hover:text-dark_light lg:text-light lg:hover:text-grey">Home</a>
+            <a href="#about" class="text-dark text-base text-center font-medium hover:text-dark_light lg:text-light lg:hover:text-grey">About</a>
+            <a href="#features" class="text-dark text-base text-center font-medium hover:text-dark_light lg:text-light lg:hover:text-grey">Features</a>
+            <a href="#collection" class="text-dark text-base text-center font-medium hover:text-dark_light lg:text-light lg:hover:text-grey">Collection</a>
+            <a href="#faqs" class="text-dark text-base text-center font-medium hover:text-dark_light lg:text-light lg:hover:text-grey">FAQs</a>
+            <a href="#reason" class="text-dark text-base text-center font-medium hover:text-dark_light lg:text-light lg:hover:text-grey">Why Us</a>
+        </div>
+        <div id="person" class="hidden w-fit gap-1 bg-grey_thru p-1 rounded-md lg:flex">
+            <img src="/svgs/person.svg" class="w-7">
+            <input type="search" name="car-search" id="car-search" class="w-32 px-3 text-xs placeholder:text-dark_thru text-dark bg-grey_thru rounded outline-none" placeholder="Search Here...">
+        </div>
+    </nav>
+
+    <section id="home" class="w-full flex flex-col gap-0 h-screen lg:flex-row">
+        <div class="w-full py-3 px-5 bg-dark flex items-end h-1/3 lg:h-full lg:w-1/3 lg:justify-end">
+            <p class="text-sm text-light_thru text-start font-medium max-w-xs">
+                Get the car of your dreams with the payment plan of your choice. There are <span class="font-bold italic">various better</span> offers from Crawl Motors.
+            </p>
+        </div>
+        <div class="relative w-full flex items-center justify-between px-5 py-7 h-2/3 lg:h-full lg:w-2/3 lg:px-9 xl:pr-16">
+            <img id="home_car" src="/images/homebg.jpeg" class="absolute w-full h-full top-0 left-0 object-cover object-left">
+            <div class="relative w-2/3 max-w-xs h-32 z-10">
+                <img src="/svgs/plus.svg" class="w-9 bg-light opacity-70 p-3 rounded-3xl absolute top-1 left-1 plus">
+                <img src="/svgs/plus.svg" class="w-9 bg-light opacity-70 p-3 rounded-3xl absolute bottom-1 right-1 plus">
+            </div>
+            <div class="w-fit flex flex-col items-center gap-y-3 z-10">
+                <p id="car1" class="next_car is-show w-9 h-9 flex items-center justify-center rounded-3xl bg-light_thru text-base text-light font-semibold cursor-pointer">01</p>
+                <p id="car2" class="next_car w-9 h-9 flex items-center justify-center rounded-3xl bg-light_thru text-base text-light font-semibold cursor-pointer">02</p>
+                <p id="car3" class="next_car w-9 h-9 flex items-center justify-center rounded-3xl bg-light_thru text-base text-light font-semibold cursor-pointer">03</p>
+                <p id="car4" class="next_car w-9 h-9 flex items-center justify-center rounded-3xl bg-light_thru text-base text-light font-semibold cursor-pointer">04</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full flex flex-wrap gap-5 items-center px-5 py-7 bg-dark justify-center opacity-95 lg:gap-9">
+        <img src="/brands/bmw.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+        <img src="/brands/ford.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+        <img src="/brands/hyundai.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+        <img src="/brands/land.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+        <img src="/brands/mercedes.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+        <img src="/brands/opel.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+        <img src="/brands/toyota.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+        <img src="/brands/volkswagen.svg" class="w-fit max-h-7 opacity-60 lg:max-h-11">
+    </div>
+
+    <section id="about" class="w-full flex flex-col gap-5 bg-dark items-center justify-start py-9 px-5">
+        <div class="w-full flex flex-col items-center justify-center gap-7 px-3 lg:flex-row lg:justify-evenly">
+            <h3 class="text-xl text-light text-start font-bold uppercase max-w-xs lg:text-3xl lg:max-w-sm">we are the leaders in the automotive industry</h3>
+            <p class="text-light_thru text-sm text-start font-normal max-w-md lg:text-base">
+                We are an automotive dealership company that has been in service for fifteen years and still in the industry. We add value to our customers in every service thereby attaining national ascendance in the <b>Automotive Industry</b>. <br>
+                <a href="#" class="text-light text-sm hover:text-grey mt-2 inline-block">Learn More</a>
+            </p>
+        </div>
+        <div class="w-full items-center justify-center flex flex-col gap-3 lg:w-fit lg:grid lg:grid-cols-3 lg:grid-rows-2 xl:px-20 xl:gap-5">
+            <img src="/images/about2.jpg" class="w-full rounded lg_img max-w-xs">
+            <img src="/images/about1.jpg" class="w-full rounded imgs max-w-xs">
+            <img src="/images/about3.jpeg" class="w-full rounded imgs max-w-xs">
+            <div id="about_text" class="w-full flex flex-col gap-5 items-start justify-between lg:h-full lg:justify-center lg:py-5">
+                <h4 class="text-base text-grey text-start font-bold uppercase lg:text-xl">purposeful and proper maintainance of your car</h4>
+                <div class="w-full flex flex-col gap-2">
+                    <p class="text-light_thru text-xs text-start font-normal flex items-center gap-3 lg:text-sm"><span class="w-3 h-3 rounded-sm bg-light"></span>Provide the right and favourable oil for your Engine to conserve it's functionality</p>
+                    <p class="text-light_thru text-xs text-start font-normal flex items-center gap-3 lg:text-sm"><span class="w-3 h-3 rounded-sm bg-light"></span>Provide the best mechanics to your car to do the Engine service class.</p>
+                </div>
+                <button id="about-btn" class="text-sm font-semibold rounded-sm px-3 py-1.5">KNOW WHY</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="w-full bg-dark flex flex-col gap-5 items-center justify-center px-5 py-9">
+        <div class="w-full flex flex-col gap-5 items-center justify-start">
+            <h3 class="text-light text-xl text-center font-bold uppercase lg:text-3xl">we have the best features</h3>
+            <p class="text-sm text-grey_thru text-center font-medium lg:text-base">We are all about our client's comfort and safety. That's why we provide service you can ever get.</p>
+        </div>
+        <div class="w-full flex flex-col gap-5 items-center justify-center px-5 py-7 md:flex-row md:flex-wrap">
+            <div class="w-60 flex flex-col items-start justify-center gap-5 px-3 py-5 flex-grow-0 card lg:w-60">
+                <h4 class="absolute top-1 -right-3.5 text-dark pointer-events-none text-7xl text-end w-full font-extrabold">01</h4>
+                <p class="text-xl text-start text-light font-bold">Quality Choice for Customers</p>
+                <p class="text-sm text-start text-light_thru font-normal">
+                    We provide quality cars in all classes and you don't need to worry about your good and free one year insurance.
+                </p>
+                <button class="bg-grey_thru self-center text-grey text-sm px-3 py-1.5 rounded">Learn More</button>
+            </div>
+            <div class="w-60 flex flex-col items-start justify-center gap-5 px-3 py-5 flex-grow-0 card lg:w-60">
+                <h4 class="absolute top-1 -right-3.5 text-dark pointer-events-none text-7xl text-end w-full font-extrabold">02</h4>
+                <p class="text-xl text-start text-light font-bold">Exclusive Service for you</p>
+                <p class="text-sm text-start text-light_thru font-normal">
+                    We provide high class services for all our customers in cases like engine oil refill and motor-vehicle mechanics.
+                </p>
+                <button class="bg-grey_thru self-center text-grey text-sm px-3 py-1.5 rounded">Learn More</button>
+            </div>
+            <div class="w-60 flex flex-col items-start justify-center gap-5 px-3 py-5 flex-grow-0 card lg:w-60">
+                <h4 class="absolute top-1 -right-3.5 text-dark pointer-events-none text-7xl text-end w-full font-extrabold">03</h4>
+                <p class="text-xl text-start text-light font-bold">Fast and Safe Transactions</p>
+                <p class="text-sm text-start text-light_thru font-normal">
+                    We gladly inform our customers that we have added new payment methods to reduce the congestion in banks.
+                </p>
+                <button class="bg-grey_thru self-center text-grey text-sm px-3 py-1.5 rounded">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="bg-dark w-full flex flex-col gap-5 items-center justify-center px-5 py-9 xl:px-12">
+        <h3 class="text-light text-xl text-center font-bold uppercase lg:text-3xl">our cars' collection</h3>
+        <p class="text-light_thru text-sm text-center max-w-xl lg:text-base xl:max-w-2xl">
+            Get the car of your choice with a variety of payment methods such as installment payment, and one time payment and many more. We also have offers for our old customers and new ones as well.
+        </p>
+        <div class="car_filters w-fit flex items-center justify-center">
+            <button type="button" class="w-fit text-sm px-2 py-1.5 text-light font-bold capitalize bg-dark opacity-70 filter lg:text-base" data-filter=".luxury">luxury</button>
+            <button type="button" class="w-fit text-sm px-2 py-1.5 text-light font-bold capitalize bg-dark opacity-70 filter lg:text-base" data-filter=".family">family</button>
+            <button type="button" class="w-fit text-sm px-2 py-1.5 text-light font-bold capitalize bg-dark opacity-70 filter lg:text-base" data-filter=".truck">truck</button>
+            <button type="button" class="w-fit text-sm px-2 py-1.5 text-light font-bold capitalize bg-dark opacity-70 filter lg:text-base" data-filter=".classic">1960's</button>
+        </div>
+
+        <div class="w-full grid grid-col-1 items-center justify-center gap-3 overflow-hidden car_container md:grid-cols-2 lg:grid lg:grid-cols-3 lg:w-fit lg:px-14 xl:grid-cols-4">
+            <div class="mix max-w-xs classic w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/classic1.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 157,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Queens Caravan</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs classic w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/classic2.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 115,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Thugs' Convoy</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs classic w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/classic3.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 97,000</p>
+                        <p class="text-grey text-base font-bold">Used</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Mayor's Yatch</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs classic w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/classic4.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 87,300</p>
+                        <p class="text-grey text-base font-bold">Refurbished</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Ford Mustang</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            
+            <div class="mix max-w-xs family w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/family1.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 127,500</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Land Cruiser TX</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs family w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/family2.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 157,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Range Rover Sport</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs family w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/family3.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 187,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Mercedes a-Class AMG</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs family w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/family5.jpeg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 175,117</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Jeep Forester</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            
+            <div class="mix max-w-xs luxury w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/luxury2.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 239,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">BMW Stadia FX-G2</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs luxury w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/luxury3.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 231,700</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Audi MX-V Class 5</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs luxury w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/luxury4.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 313,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Hyundai Ionic V-Class</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs luxury w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/luxury7.jpeg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 275,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">mazda Cancei TV-17</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="mix max-w-xs truck w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/truck1.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 79,301</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Kanta EV-7 Truck</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs truck w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/truck2.jpg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 153,000</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Ford T8i Runner Class</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+            <div class="mix max-w-xs truck w-full h-full flex flex-col flex-shrink gap-3 items-start justify-between option bg-light_theme">
+                <img src="/cars/truck3.jpeg" class="w-full h-fit">
+                <div class="w-full flex flex-col items-start justify-center p-3 pt-0 gap-2.5">
+                    <div class="w-full flex items-center justify-between">
+                        <p class="text-xl text-light text-start font-bold"><span class="text-grey text-2xl">$</span> 133,570</p>
+                        <p class="text-grey text-base font-bold">Brand New</p>
+                    </div>
+                    <p class="text-grey text-base font-semibold text-start capitalize">Ford T8i Farmer Class</p>
+                    <button class="buy_btn w-full py-3 text-dark text-sm font-semibold self-center bg-light">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="w-fit px-5 py-3 text-dark text-sm font-semibold bg-light flex gap-3 items-center justify-center rounded-sm cars-link lg:mt-7">See All Cars <span class="w-fit"><img src="/svgs/arrow-right.svg" class="w-3"></span></a>
+    </section>
+
+    <section id="faqs" class="w-full px-5 py-9 bg-dark flex flex-col items-center justify-center gap-5 lg:flex-row lg:gap-11">
+        <div class="w-full flex flex-col gap-7 items-center justify-center max-w-md md:items-start lg:max-w-lg xl:w-1/2 xl:max-h-full">
+            <p class="text-xl text-start text-light font-bold md:text-2xl lg:text-3xl lg:mb-7">Maybe questions have been answered here.</p>
+            <div class="w-full flex flex-col items-start justify-center gap-3 faq max-w-2xl">
+                <div class="w-full flex items-start justify-between gap-7">
+                    <p class="text-base text-grey text-start font-semibold max-w-md">What are the best cars to buy here?</p>
+                    <div class="w-fit show-btn">
+                        <img src="/svgs/show.svg" class="faq_show mt-1.5 w-4 cursor-pointer">
+                        <img src="/svgs/remove.svg" class="faq_close hidden  mt-1.5 w-4 cursor-pointer">
+                    </div>
+                </div>
+                <p class="text-sm text-grey_thru text-start font-normal hidden max-w-md faq_answer">If you want a car that lasts long and cheap to maintain, we recommend family cars and trucks.</p>
+            </div>
+            <div class="w-full flex flex-col items-start justify-center gap-3 faq max-w-2xl">
+                <div class="w-full flex items-start justify-between gap-7">
+                    <p class="text-base text-grey text-start font-semibold max-w-md">How do I ensure Durability & Strength?</p>
+                    <div class="w-fit show-btn">
+                        <img src="/svgs/show.svg" class="faq_show mt-1.5 w-4 cursor-pointer">
+                        <img src="/svgs/remove.svg" class="faq_close hidden  mt-1.5 w-4 cursor-pointer">
+                    </div>
+                </div>
+                <p class="text-sm text-grey_thru text-start font-normal hidden max-w-md faq_answer">To achieve durability and strength of your car make sure you follow the on purchase and frequently service it.</p>
+            </div>
+            <div class="w-full flex flex-col items-start justify-center gap-3 faq max-w-2xl">
+                <div class="w-full flex items-start justify-between gap-7">
+                    <p class="text-base text-grey text-start font-semibold max-w-md">What are the best mechanical services here?</p>
+                    <div class="w-fit show-btn">
+                        <img src="/svgs/show.svg" class="faq_show mt-1.5 w-4 cursor-pointer">
+                        <img src="/svgs/remove.svg" class="faq_close hidden  mt-1.5 w-4 cursor-pointer">
+                    </div>
+                </div>
+                <p class="text-sm text-grey_thru text-start font-normal hidden max-w-md faq_answer">Our best mechanical services are mostly in the field of wiring, engine mechanics and painting.</p>
+            </div>
+        </div>
+        <img src="/images/faqs_image.jpg" class="w-full rounded-sm max-w-md lg:max-w-md xl:max-w-lg">
+    </section>
+
+    <section id="reason" class="relative w-full flex flex-col items-center justify-center gap-7 bg-dark px-5 py-9 lg:gap-11">
+        <h1 class="absolute text-3xl title text-center w-full top-2 md:text-5xl md:px-7 lg:text-7xl lg:top-11 lg:max-w-4xl">WHY CHOOSE CRAWL MOTORS?</h1>
+        <div class="w-full flex flex-col gap-5 items-center justify-center">
+            <h3 class="text-light text-lg text-center font-bold uppercase">why choose us</h3>
+            <div class="w-full greybg px-5 py-4 flex flex-col items-center justify-center gap-3 sm:w-64">
+                <div class="w-full flex items-center justify-between gap-5">
+                    <img src="/svgs/pay_card.svg" class="w-9">
+                    <p class="text-grey text-base text-center font-bold">Card Payments</p>
+                </div>
+                <div class="w-full flex items-center justify-between gap-5">
+                    <img src="/svgs/pay_paypal.svg" class="w-9">
+                    <p class="text-grey text-base text-center font-bold">Mobile Payments</p>
+                </div>
+                <div class="w-full flex items-center justify-between gap-5">
+                    <img src="/svgs//pay_speed.svg" class="w-9">
+                    <p class="text-grey text-base text-center font-bold">Secure & Safe</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative w-full flex flex-col items-center justify-center gap-5 lg:w-fit lg:flex-row">
+            <h1 class="absolute text-3xl title text-center w-full top-2 md:text-5xl md:px-7 lg:text-7xl lg:max-w-4xl">WHAT OUR CUSTOMERS SAY?!</h1>
+            <div class="review w-64 flex flex-col gap-4 items-center justify-center p-5 lg:mt-48">
+                <img src="/images/people1.jpg" class="w-16 rounded-full object-cover h-16">
+                <h5 class="text-light text-base text-center font-semibold">JOHN DOE</h5>
+                <p class="text-grey text-sm text-center font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquid amet natus animi voluptatum ducimus sed, est tempora exercitationem, impedit rerum.</p>
+            </div>
+            <div class="review w-64 flex flex-col gap-4 items-center justify-center p-5">
+                <img src="/images/people2.jpg" class="w-16 rounded-full object-cover h-16">
+                <h5 class="text-light text-base text-center font-semibold">TOM GRADO</h5>
+                <p class="text-grey text-sm text-center font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus, accusamus quos perspiciatis dolor dolorem eaque hic inventore laborum quod repellat vitae ullam incidunt magnam dolore obcaecati? Quaerat, possimus nulla.</p>
+            </div>
+            <div class="review w-64 flex flex-col gap-4 items-center justify-center p-5 lg:mt-48">
+                <img src="/images/people3.jpg" class="w-16 rounded-full object-cover h-16">
+                <h5 class="text-light text-base text-center font-semibold">ALEX BURTER</h5>
+                <p class="text-grey text-sm text-center font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquid amet natus animi voluptatum ducimus sed, est tempora exercitationem, impedit rerum.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="w-full bg-dark flex flex-col gap-7 items-center justify-center py-9 px-5 sm:px-7 md:px-12 lg:px-9 xl:px-24">
+        <h3 class="text-xl text-light text-start w-full font-black lg:text-3xl xl:text-4xl">CRAWL MOTORS</h3>
+        <div class="w-full div-links flex flex-col items-center justify-center gap-5 lg:flex-row lg:items-start lg:justify-between">
+            <div class="w-full flex flex-col items-start justify-center gap-5">
+                <p class="text-grey text-sm text-start font-medium max-w-xs flex flex-col gap-2.5 xl:text-base">At Crawl Motors, we have the best and we believe we can deliver quality service excellence for all our customers. <span>Check out our Newsletter</span></p>
+                <div class="input w-full flex relative h-11 bg-light_theme max-w-xs">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="w-full bg-transparent text-sm text-grey px-3 outline-none placeholder:pl-1 placeholder:text-light_thru placeholder:text-sm">
+                    <button type="submit" class="absolute w-fit h-full right-0 bg-dark text-grey px-3.5 text-sm hover:text-light">Subscribe</button>
+                </div>
+            </div>
+            <div class="w-full flex flex-col items-start justify-center gap-1 lg:w-64">
+                <p class="text-lg font-black text-light text-start xl:text-xl">Navigate Here</p>
+                <div class="w-full flex flex-col items-start justify-center gap-0">
+                    <a href="#" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Home</a>
+                    <a href="#about" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">About</a>
+                    <a href="#features" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Services</a>
+                    <a href="#collection" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Stock</a>
+                    <a href="#reason" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Reviews</a>
+                </div>
+            </div>
+            <div class="w-full flex flex-col items-start justify-center gap-1 lg:w-64">
+                <p class="text-lg font-black text-light text-start xl:text-xl">Crawl Support</p>
+                <div class="w-full flex flex-col items-start justify-center gap-0">
+                    <a href="#" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Terms</a>
+                    <a href="#" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Pricing</a>
+                    <a href="#" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Security</a>
+                </div>
+            </div>
+            <div class="w-full flex flex-col items-start justify-center gap-1 lg:w-64">
+                <p class="text-lg font-black text-light text-start xl:text-xl">Organisation</p>
+                <div class="w-full flex flex-col items-start justify-center gap-0">
+                    <a href="#" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Customers</a>
+                    <a href="#" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Partners</a>
+                    <a href="#" class="text-grey text-sm text-end font-medium xl:text-base hover:ml-1">Community</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex flex-col items-center justify-center gap-2 lg:flex-row lg:justify-between">
+            <div class="w-full flex flex-col items-start justify-center">
+                <div class="w-full flex items-center gap-2 justify-center lg:justify-start">
+                    <p class="text-light_thru text-sm text-start">Terms & Conditions</p>
+                    <div class="w-1.5 h-1.5 rounded bg-light"></div>
+                    <p class="text-light_thru text-sm text-start flex">Privacy Policy</p>
+                    <div class="w-1.5 h-1.5 rounded bg-light"></div>
+                    <p class="text-light_thru text-sm text-start flex">Payment Security</p>
+                </div>
+                <p class="text-light_thru text-sm text-start w-full sm:text-center lg:text-start">&copy; Crawl Motors 2022 All Rights Reserved</p>
+            </div>
+            <div class="w-full flex items-center justify-center gap-5">
+                <a href="https://www.facebook.com/crawlmotors" class="text-base font-bold text-light text-center hover:text-grey">Facebook</a>
+                <a href="https://www.instagram.com/crawlmotors" class="text-base font-bold text-light text-center hover:text-grey">Instagram</a>
+                <a href="https://www.twitter.com/crawlmotors" class="text-base font-bold text-light text-center hover:text-grey">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.car_container');
+
+        var mixer = mixitup(containerEl, {
+            selectors: {
+                target: '.option'
+            },
+            animation: {
+                duration: 300,
+                
+            }
+        });
+    </script>
+</body>
+</html>
