@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="card-outline.svg"
+   inkscape:version="1.2 (1:1.2+202205211824+da316b6974)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.9296875"
+     inkscape:cx="246.85714"
+     inkscape:cy="257.61345"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <title
+     id="title2">ionicons-v5-d</title>
+  <line
+     x1="48"
+     y1="192"
+     x2="464"
+     y2="192"
+     style="fill:#9ca3af;stroke:#9ca3af;stroke-linejoin:round;stroke-width:60px;fill-opacity:1;stroke-opacity:1"
+     id="line6" />
+  <rect
+     x="48"
+     y="96"
+     width="416"
+     height="320"
+     rx="56"
+     ry="56"
+     style="fill:none;stroke:#fafafa;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px;stroke-opacity:1"
+     id="rect4" />
+  <rect
+     x="128"
+     y="300"
+     width="48"
+     height="20"
+     style="fill:#9ca3af;stroke:#9ca3af;stroke-linejoin:round;stroke-width:60px;fill-opacity:1;stroke-opacity:1"
+     id="rect8" />
+</svg>
