@@ -1463,6 +1463,10 @@ p, button, a, ::placeholder, li, input {
 }
 
 @media (min-width: 887px) {
+  section {
+    min-height: 25vh;
+  }
+  
   .lg\:relative {
     position: relative;
   }
